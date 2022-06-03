@@ -11,6 +11,7 @@ export default function Player({id, movies }) {
       </div>
       <div className="video">
         <ReactPlayer
+        controls
           playing
           light
           height="720px"
