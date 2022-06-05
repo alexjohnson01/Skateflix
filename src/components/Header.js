@@ -1,4 +1,4 @@
-export default function Header({val, setVal}) {
+export default function Header({val, setVal, className}) {
   const searchHandler = () => {
       setVal("");
     };
@@ -6,7 +6,7 @@ export default function Header({val, setVal}) {
       setVal(e.target.value);
     };
 return (
-  <div className="header">
+  <div className={className}>
     <h1>LOGO</h1>
     <div className="header-container">
       <input
@@ -18,7 +18,6 @@ return (
       <button className="signin" onClick={searchHandler}>
         search
       </button>
-      <button className="signin">:)</button>
     </div>
   </div>
 );

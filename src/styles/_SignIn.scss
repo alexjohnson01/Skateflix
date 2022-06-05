@@ -1,23 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: none;
+  box-sizing: border-box;
+  padding: none;
+}
+
 body {
   background: rgb(25, 25, 25);
 }
 .big-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: url("https://i.ytimg.com/vi/JVt5qhb6VcM/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 51.25rem;
 }
-.header {
-    margin-top: 5rem;
+.headerSignin {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.logo {
+  margin-left: 3rem;
+  margin-bottom: 4rem;
 }
 .SignIn-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
+  margin-bottom: 2rem;
   width: 25rem;
-  height: 26rem;
-  background-color: rgba($color: #000000, $alpha: 0.5);
+  height: 35rem;
+  background-color: rgba($color: #000000, $alpha: 0.75);
   h3 {
     color: gray;
     span {
@@ -35,17 +54,17 @@ body {
     }
   }
   input {
-      height: 2rem;
-      margin-top: 0.75rem;
-      width: 15rem;
+    height: 2rem;
+    margin-top: 0.75rem;
+    width: 15rem;
   }
   button {
-      height: 2rem;
-      border: none;
-      background-color: red;
-      width: 15rem;
-      margin-top: 2rem;
-      margin-bottom: 4rem;
+    height: 2rem;
+    border: none;
+    background-color: red;
+    width: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
   .sign-up {
     background: none;
@@ -55,7 +74,7 @@ body {
     color: white;
     cursor: pointer;
     font-size: 1.1rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: bold;
   }
   .sign-up:hover {

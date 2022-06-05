@@ -21,7 +21,7 @@ export default function Home({
   const [isSearch, setIsSearch] = useState(false);
   return (
     <div className="container">
-      <Header val={val} setVal={setVal} />
+      <Header className={"headerHome"} val={val} setVal={setVal} />
       <Thumbnail
         isSearch={isSearch}
         setIsSearch={setIsSearch}

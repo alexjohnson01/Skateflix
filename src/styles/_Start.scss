@@ -1,12 +1,19 @@
-body {
-    background: black;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: none;
 }
-.header {
-  margin-top: 1rem;
+
+body {
+  background: black;
+}
+.header1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 2rem;
   h1 {
-      color: white;
+    color: white;
   }
   .signin {
     background: red;
@@ -14,10 +21,11 @@ body {
     width: 4rem;
     height: 2.3rem;
     border: none;
-}
+  }
 }
 
 .main {
+  display: flex;
   margin-top: 12rem;
   margin-left: 10rem;
   margin-right: 10rem;
@@ -25,32 +33,82 @@ body {
   flex-direction: column;
   align-items: center;
   h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-      color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
   }
   h2 {
-      margin-bottom: 1rem;
-      color: white;
+    margin-bottom: 1rem;
+    color: white;
   }
   h3 {
-      text-align: center;
-      margin-bottom: 1rem;
-      color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
   }
   button {
-      margin-top: 1rem;
-      background: red;
-      color: white;
+    margin-top: 1rem;
+    background: red;
+    color: white;
   }
   .getStarted {
-      border: none;
-      width: 6rem;
-      height: 1.5rem;
+    border: none;
+    margin-left: 0.1rem;
+    width: 14rem;
+    height: 3.5rem;
+    cursor: pointer;
   }
   input {
-      border: none;
-      height: 1.5rem;
-      width: 10rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    height: 3.47rem;
+    width: 27rem;
   }
+}
+.emailSignUp {
+  display: flex;
+  justify-content: center;
+  width: 55rem;
+}
+
+.startTitle {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.startText {
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-bottom: 1.2rem;
+}
+
+.startP {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.bg {
+    z-index: 1;
+}
+.container1 {
+    position: relative;
+}
+.image {
+  z-index: -1;
+  opacity: 0.5;
+  aspect-ratio: 16/9;
+  position: absolute;
+  height: 51.25rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://skatenewswire.com/wp-content/uploads/2019/03/Jake-Phelps-Post.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-2");
+}
+
+.emailSubmit {
+    padding-left: .5rem;
+    padding: none;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
 }
