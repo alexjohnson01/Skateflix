@@ -60,6 +60,7 @@
         padding-left: 0.5rem;
       }
       button {
+        color: white;
         border: none;
         background-color: red;
         box-sizing: border-box;
@@ -218,12 +219,14 @@ body {
   }
 }
 
-//.card:hover {
-//  transform: scale(1.2) !important;
-//  margin-right: 2.5rem !important;
-//  margin-left: 2.5rem !important;
-//}
+/*
+.card:hover {
+  transform: scale(1.2) !important;
+  margin-right: 2.5rem !important;
+  margin-left: 2.5rem !important;
+}
+.card:hover ~ .rows {
+margin-left: 0rem;
+}
 
-//.card:hover ~ .rows {
-// margin-left: 0rem;
-//}
+*/

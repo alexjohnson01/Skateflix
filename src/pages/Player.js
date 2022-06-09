@@ -9,7 +9,7 @@ export default function Player({id, movies }) {
           <button className="back">BACK</button>
         </Link>
       </div>
-      <div className="video">
+      <div className="videoPlayer">
         <ReactPlayer
         controls
           playing
