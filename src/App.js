@@ -11,7 +11,7 @@ import { Route, Routes } from "react-router-dom";
 //Import State
 import { useState } from "react";
 //Import database
-import { trendingNow, allVideos } from "./utils/database";
+import { allVideos, trendingNow } from "./utils/database";
 import { AuthProvider } from "./context/AuthContext";
 import PrivateRoutes from "./components/PrivateRoutes";
 
@@ -19,10 +19,9 @@ function App() {
   //State
   const [id, setId] = useState(0);
   const [movies, setMovies] = useState(allVideos);
-  const [popularMovies, setPopularMovies] = useState(trendingNow);
+  const [trendingMovies, setTrendingMovies] = useState(trendingNow);
   const [cardsIndex, setCardsIndex] = useState(0);
   const [cardsIndex2, setCardsIndex2] = useState(0);
-  const [cardsIndex3, setCardsIndex3] = useState(0);
   return (
     <AuthProvider>
       <div className="App">
@@ -38,14 +37,12 @@ function App() {
                   setId={setId}
                   movies={movies}
                   setMovies={setMovies}
-                  popularMovies={popularMovies}
-                  setPopularMovies={setPopularMovies}
+                  trendingMovies={trendingMovies}
+                  setTrendingMovies={setTrendingMovies}
                   cardsIndex={cardsIndex}
                   setCardsIndex={setCardsIndex}
                   cardsIndex2={cardsIndex2}
                   setCardsIndex2={setCardsIndex2}
-                  cardsIndex3={cardsIndex3}
-                  setCardsIndex3={setCardsIndex3}
                 />
               </PrivateRoutes>
             }

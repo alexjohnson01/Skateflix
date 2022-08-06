@@ -1,22 +1,32 @@
 .video-container {
   .top-controls {
-      position: absolute;
+    display: flex;
     .back {
       border: none;
       outline: none;
       background-color: red;
       color: white;
-      padding: .5rem;
-      margin: 1rem;
-      margin-left: 6rem;
+      padding: 1.35rem;
+    }
+    .heading {
+      padding-top: 0.7rem;
+      padding-right: 1.35rem;
+      margin-right: 4rem;
+      border: none;
+      outline: none;
+      background-color: rgb(25, 25, 25);
+      color: white;
+      width: 100rem;
+      text-align: center;
     }
   }
   .videoPlayer {
-      margin-top: 3rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 100%;
+    border: none;
+    outline: none;
+    margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
-  

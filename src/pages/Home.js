@@ -6,15 +6,13 @@ import { useState } from "react";
 export default function Home({
   setId,
   movies,
-  popularMovies,
-  setPopularMovies,
   setMovies,
+  trendingMovies,
+  setTrendingMovies,
   cardsIndex,
   setCardsIndex,
   cardsIndex2,
   setCardsIndex2,
-  cardsIndex3,
-  setCardsIndex3,
 }) {
   //State
   const [val, setVal] = useState("");
@@ -45,8 +43,9 @@ export default function Home({
         <Carousel
           cardsIndex={cardsIndex}
           setCardsIndex={setCardsIndex}
-          setPopularMovies={setPopularMovies}
-          popularMovies={movies}
+          movieList={movies}
+          setTrendingMovies={setMovies}
+          trendingMovies={movies}
           setId={setId}
           title={"Popular on Skateflix"}
           css={"--cardsIndex"}
@@ -55,22 +54,13 @@ export default function Home({
         <Carousel
           cardsIndex={cardsIndex2}
           setCardsIndex={setCardsIndex2}
-          setPopularMovies={setMovies}
-          popularMovies={movies}
+          movieList={trendingMovies}
+          setMovies={setTrendingMovies}
+          movies={trendingMovies}
           setId={setId}
           title={"Trending Now"}
           css={"--cardsIndex2"}
           className={"cards2"}
-        />
-        <Carousel
-          cardsIndex={cardsIndex3}
-          setCardsIndex={setCardsIndex3}
-          setPopularMovies={setMovies}
-          popularMovies={movies}
-          setId={setId}
-          title={"Watch it Again"}
-          css={"--cardsIndex3"}
-          className={"cards3"}
         />
       </div>
     </div>

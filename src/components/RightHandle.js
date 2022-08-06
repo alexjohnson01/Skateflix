@@ -2,8 +2,6 @@ export default function RightHandle({
   cardsIndex,
   setCardsIndex,
   css,
-  popularMovies,
-  setPopularMovies,
 }) {
   //Functions
   const onHandleClickRight = () => {

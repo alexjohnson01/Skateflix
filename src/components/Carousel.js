@@ -5,12 +5,15 @@ import Card from "./Card";
 export default function Carousel({
   cardsIndex,
   setCardsIndex,
-  setPopularMovies,
-  popularMovies,
+  setMovies,
+  movies,
+  setTrendingMovies,
+  trendingMovies,
   setId,
   title,
   css,
   className,
+  movieList,
 }) {
   //Functions
   const idHandler = (event) => {
@@ -27,7 +30,7 @@ export default function Carousel({
           css={css}
         />
         <div className={className}>
-          {popularMovies.map(({ thumbnail, id }) => {
+          {movieList.map(({ thumbnail, id }) => {
             return <Card thumbnail={thumbnail} id={id} idHandler={idHandler} />;
           })}
         </div>
@@ -35,8 +38,8 @@ export default function Carousel({
           cardsIndex={cardsIndex}
           setCardsIndex={setCardsIndex}
           css={css}
-          popularMovies={popularMovies}
-          setPopularMovies={setPopularMovies}
+          movies={movies}
+          setMovies={setMovies}
         />
       </div>
     </>

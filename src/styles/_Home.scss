@@ -112,20 +112,6 @@
         flex: 0 0 25%;
       }
     }
-    .cards3 {
-      margin: 0 0.25rem;
-      display: flex;
-      width: calc(100% - 5rem);
-      transform: translateX(calc(var(--cardsIndex3) * -100%));
-      transition: transform 700ms ease-in-out;
-      .card {
-        aspect-ratio: 16 / 9;
-        max-width: 21.25rem;
-        transition: transform 300ms ease 100ms, margin 400ms ease-in-out;
-        padding: 0.4rem;
-        flex: 0 0 25%;
-      }
-    }
   }
 }
 
@@ -167,10 +153,14 @@ body {
 }
 
 .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: relative;
   color: whitesmoke;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  margin-left: 1rem !important;
+  margin-bottom: .5rem;
+  margin-left: 2.9rem !important;
+  z-index: 3;
 }
 
 .searchTrue:focus {
@@ -220,6 +210,7 @@ body {
 }
 
 /*
+
 .card:hover {
   transform: scale(1.2) !important;
   margin-right: 2.5rem !important;
